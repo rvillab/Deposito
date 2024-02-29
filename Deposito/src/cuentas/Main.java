@@ -2,14 +2,16 @@ package cuentas;
 public class Main {
 
     public static void main(String[] args) {
-        operativa_cuenta();
+    	float cantidad=2500f;    	
+    	operativa_cuenta(cantidad);
     }
 
-	private static void operativa_cuenta() {
+	private static void operativa_cuenta(float cantidad) {
 		CCuenta cuenta1;
         double saldoActual;
         
-		cuenta1 = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
+        
+		cuenta1 = new CCuenta("Antonio López","1000-2365-85-1230456789",cantidad,0);
         saldoActual = cuenta1.estado();
         System.out.println("El saldo actual es"+ saldoActual );
         
