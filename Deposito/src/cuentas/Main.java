@@ -1,11 +1,29 @@
 package cuentas;
-public class Main {
+/**
+ * Esta clase nos permite introducir valores y probar la clase CCuenta 
+ * 
+ * @author Rafael Villa Barrado
+ * @version 1.0
+ * @since 29/02/2024
+ * 
+ */
 
+public class Main {
+	/**
+	 * Metodo principal del programa
+	 * @param args son los argumentos de la clase principal
+	 * 
+	 */
     public static void main(String[] args) {
     	float cantidad=2500f;    	
     	operativa_cuenta(cantidad);
     }
 
+    /**
+	 * Creación de una cuenta y prueba de diferentes operaciones sobre ella
+	 * @param cantidad es la cantidad de dinero con el que inicializamos la cuenta
+	 * 
+	 */
 	private static void operativa_cuenta(float cantidad) {
 		CCuenta cuenta1;
         double saldoActual;
